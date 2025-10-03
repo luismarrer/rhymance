@@ -7,7 +7,7 @@
     <title>Rhymance</title>
     <link rel="stylesheet" href="css/custom.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="./swipe/css/style.css">
+    <link rel="stylesheet" href="css/swipe.css">
 </head>
 <body class="bg-body">
     <nav id="navbar" class="navbar px-3 mb-3 fixed-top bg-body ">
@@ -17,7 +17,7 @@
                 <a class="nav-link" href="#home">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#demo">Demo</a>
+                <a class="nav-link" href="#demostration">Demo</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#app">Aplicación</a> <!-- quizas destacar el editor de texto de dentro de la app -->
@@ -36,8 +36,8 @@
     <main>
         <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
             <!-- Sección Hero / Inicio / carousel-->
-            <div class="carousel-container">
-                <div id="home" class="carousel slide carousel-modern">
+            <div class="carousel-container" id="home">
+                <div class="carousel slide carousel-modern">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,36 +77,40 @@
                 </div>
             </div>
             <!-- Demo -->
-            <section id="demo">
-                <header>
-                    <img src="./swipe/icons/tinder-logo.webp" alt="Rhymance logo">
-                </header>
-                <div class="cards">
-                    <article>
-                        <img src="./swipe/photos/2.webp" alt="Álex, brown hair man, 25 years old">
-                        <h2>Alex <span>25</span></h2>
-                        <div class="choice nope">NOPE</div>
-                        <div class="choice like">LIKE</div>
-                    </article>
-                    <article>
-                        <img src="./swipe/photos/1.webp" alt="Leila readhead 27 years old">
-                        <h2>Leila <span>27</span></h2>
-                        <div class="choice nope">NOPE</div>
-                        <div class="choice like">LIKE</div>
-                    </article>
-                    <span>
-                        No hay más personas cerca de ti...<br>
-                        Vuelve a intentarlo más tarde
-                    </span>
+            <div class="iphone-container" id="demostration">
+                <div class="iphone-device">
+                    <section id="demo">
+                        <header>
+                            <img src="images/logo.png" alt="Rhymance logo" width="100">
+                        </header>
+                        <div class="cards">
+                            <article>
+                                <img src="images/photos/2.webp" alt="Álex, brown hair man, 25 years old">
+                                <h2>Alex <span>25</span></h2>
+                                <div class="choice nope">NOPE</div>
+                                <div class="choice like">LIKE</div>
+                            </article>
+                            <article>
+                                <img src="images/photos/1.webp" alt="Leila readhead 27 years old">
+                                <h2>Leila <span>27</span></h2>
+                                <div class="choice nope">NOPE</div>
+                                <div class="choice like">LIKE</div>
+                            </article>
+                            <span>
+                                No hay más personas cerca de ti...<br>
+                                Vuelve a intentarlo más tarde
+                            </span>
+                        </div>
+                        <footer>
+                            <button class="is-undo" aria-label="undo"></button>
+                            <button class="is-remove is-big" aria-label="remove"></button>
+                            <button class="is-star" aria-label="star"></button>
+                            <button class="is-fav is-big" aria-label="fav"></button>
+                            <button class="is-zap" aria-label="zap"></button>
+                        </footer>
+                    </section>
                 </div>
-                <footer>
-                    <button class="is-undo" aria-label="undo"></button>
-                    <button class="is-remove is-big" aria-label="remove"></button>
-                    <button class="is-star" aria-label="star"></button>
-                    <button class="is-fav is-big" aria-label="fav"></button>
-                    <button class="is-zap" aria-label="zap"></button>
-                </footer>
-            </section>
+            </div>
             <!-- FIN DEMO -->
 
             <!-- Sección Producto / Aplicación -->
@@ -345,6 +349,6 @@
     </main>
     <footer></footer>
     <script type="module" src="js/main.js"></script>
-    <script src="./swipe/js/swipe.js"></script>
+    <script src="./js/swipe.js"></script>
 </body>
 </html>
