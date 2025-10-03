@@ -4,7 +4,7 @@
  * Bootstrap JS import
  * Importamos el bundle completo que incluye Popper.js
  */
-import * as bootstrap from '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+import * as bootstrap from '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 
 // Hacer bootstrap disponible globalmente (opcional, útil para debugging)
 // @ts-ignore - Evitar conflictos de tipos entre bootstrap runtime y @types/bootstrap
