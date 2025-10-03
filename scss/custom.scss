@@ -1,0 +1,36 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// 🎨 Paleta Rhymance
+$passion-text: #E63946;
+$liryc-text: #6A4C93;
+
+$light-background: #F8F9FA;
+$dark-background: #1B1B1B;
+
+$light-text: #212529;   // texto sobre fondo claro
+$dark-text: #EAEAEA;    // texto sobre fondo oscuro
+
+$rhymancedark: #8B1E2D;
+$rhymancelight: #F1A1A7;
+
+// Rhymance theme
+$rhymance-colors: (
+  rhymancedark: $rhymancedark,
+  rhymancelight: $rhymancelight,
+);
+
+$theme-colors: map-merge($theme-colors, $rhymance-colors);
+
+// 🔀 Selector de esquema
+$theme: light !default; // cámbialo a dark si quieres
+
+@if $theme == light {
+  $body-bg: $light-background;
+  $body-color: $light-text;
+} @else if $theme == dark {
+  $body-bg: $dark-background;
+  $body-color: $dark-text;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

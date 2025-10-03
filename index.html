@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
-        <title>Rhymance</title>
-    </head>
-    <body>
-        <main>
-            <section>
-                <header>
-                    <img src="/icons/tinder-logo.webp" alt="Rhymance logo">
-                </header>
-                <div class="cards">
-                    <article>
-                        <img src="./photos/2.webp" alt="Álex, brown hair man, 25 years old">
-                        <h2>Alex <span>25</span></h2>
-                        <div class="choice nope">NOPE</div>
-                        <div class="choice like">LIKE</div>
-                    </article>
-                    <article>
-                        <img src="./photos/1.webp" alt="Leila readhead 27 years old">
-                        <h2>Leila <span>27</span></h2>
-                        <div class="choice nope">NOPE</div>
-                        <div class="choice like">LIKE</div>
-                    </article>
-                    <span>
-                        No hay más personas cerca de ti...<br>
-                        Vuelve a intentarlo más tarde
-                    </span>
-                </div>
-                <footer>
-                    <button class="is-undo" aria-label="undo"></button>
-                    <button class="is-remove is-big" aria-label="remove"></button>
-                    <button class="is-star" aria-label="star"></button>
-                    <button class="is-fav is-big" aria-label="fav"></button>
-                    <button class="is-zap" aria-label="zap"></button>
-                </footer>
-            </section>
-        </main>
-        <script src="/js/swipe.js"></script>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Rhymance</title>
+    <link rel="stylesheet" href="css/custom.min.css">
+</head>
+<body>
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" width="100"></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">First heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading2">Second heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading3">Third heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <p>...</p>
+    </div>
+    <main></main>
+    <footer></footer>    
+</body>
 </html>
