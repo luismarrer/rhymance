@@ -2,13 +2,9 @@
 
 ## Tareas
 
+- [ ] Añadir webpack al proyecto.
 - [ ] Página de presentación:
-  - [X] Logo en formato imagen.
-  - [X] Favicon en formato imagen.
-  - [X] Menú de navegación fijo en parte superior.
-  - [X] Enlaces a las partes de la página, incluyendo scrollSpy.
-    - [X] Las partes de la página serán:
-  - [X] Carousel con al menos dos fotos.
+  - [ ] JS en producción.
   - [ ] Arreglar carrousel.
   - [ ] Tarjeta con foto y descripción del producto. El botón “Contactar” llevará a la misma página que la del menú de navegación. A la foto principal del producto se le añade un Modal que cuando se haga click se abra la imagen del producto en grande.
   - [ ] Apartado de especificaciones técnicas será características principales con una tabla de al menos 5 filas.
@@ -35,21 +31,12 @@ Check pidiendo si la persona es particular o empresa
 Text Área con el texto que se utiliza
 Botón de solicitud
 
-
 La parte de especificaciones Técnicas será cambiada por una de 'Características Principales' de la app.
-
-
 
 1. Match por AfinidadAlgoritmo que conecta basado en gustos poéticos
 
-
-
 2. Crear PoemasHerramientas para escribir y compartir tus propios versos
 
-
-
 3. Comunidad GlobalConecta con poetas y románticos de todo el mundo
-
-
 
 4. Verificación de PerfilSistema de verificación para mayor seguridad
