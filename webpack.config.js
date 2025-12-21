@@ -74,6 +74,11 @@ module.exports = (env, argv) => {
         filename: 'terms.html',
         chunks: ['main']
       }),
+      new HtmlWebpackPlugin({
+        template: './cookies.html',
+        filename: 'cookies.html',
+        chunks: ['main']
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].[contenthash].css'
       }),
