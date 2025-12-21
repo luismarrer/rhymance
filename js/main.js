@@ -1,10 +1,17 @@
 // @ts-check
 
 /**
+ * Importar estilos
+ */
+import '../scss/custom.scss';
+import '../css/styles.css';
+import '../css/swipe.css';
+
+/**
  * Bootstrap JS import
  * Importamos el bundle completo que incluye Popper.js
  */
-import * as bootstrap from '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
+import * as bootstrap from 'bootstrap';
 
 // Hacer bootstrap disponible globalmente (opcional, útil para debugging)
 // @ts-ignore - Evitar conflictos de tipos entre bootstrap runtime y @types/bootstrap
@@ -17,3 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
   
   console.log('Bootstrap JS cargado correctamente')
 })
+
