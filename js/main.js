@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Los componentes como Carousel y Scrollspy se inicializan automáticamente
   // con los atributos data-bs-* en el HTML
   
+  // Habilitar popovers para botones con data-bs-toggle="popover"
+  const popoverTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  popoverTriggerList.forEach((popoverTriggerEl) => {
+    // eslint-disable-next-line no-new
+    new bootstrap.Popover(popoverTriggerEl)
+  })
+
   console.log('Bootstrap JS cargado correctamente')
 })
 
