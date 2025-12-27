@@ -303,6 +303,12 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Popover - título visible */
+.popover-header {
+    color: #1a1a1a;
+    background-color: #f8f9fa;
+}
+
 /* Footer */
 footer a {
     transition: all 0.3s ease;
