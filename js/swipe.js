@@ -1,4 +1,4 @@
-const DECISION_THRESHOLD = 75
+ const DECISION_THRESHOLD = 75
 
   let isAnimating = false
   let pullDeltaX = 0 // distance from the card being dragged
@@ -99,3 +99,4 @@ const DECISION_THRESHOLD = 75
 
   document.addEventListener('mousedown', startDrag)
   document.addEventListener('touchstart', startDrag, { passive: true })
+  
