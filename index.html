@@ -80,37 +80,43 @@
             <section id="app" class="py-5">
                 <!-- DEMO -->
                 <div class="iphone-container" id="demostration">
-                    <div class="iphone-device">
-                        <section id="demo">
-                            <header>
-                                <img src="images/logo.png" alt="Rhymance logo" width="100">
-                            </header>
-                            <div class="cards">
-                                <article>
-                                    <img src="images/poems/Me hablaste.png" alt="Álex, brown hair man, 25 years old">
-                                    <h2>Alex <span>25</span></h2>
-                                    <div class="choice nope">NOPE</div>
-                                    <div class="choice like">LIKE</div>
-                                </article>
-                                <article>
-                                    <img src="images/poems/No escribí.png" alt="Leila readhead 27 years old">
-                                    <h2>Leila <span>27</span></h2>
-                                    <div class="choice nope">NOPE</div>
-                                    <div class="choice like">LIKE</div>
-                                </article>
-                                <span>
-                                    No hay más personas cerca de ti...<br>
-                                    Vuelve a intentarlo más tarde
-                                </span>
-                            </div>
-                            <footer>
-                                <button class="is-undo" aria-label="undo"></button>
-                                <button class="is-remove is-big" aria-label="remove"></button>
-                                <button class="is-star" aria-label="star"></button>
-                                <button class="is-fav is-big" aria-label="fav"></button>
-                                <button class="is-zap" aria-label="zap"></button>
-                            </footer>
-                        </section>
+                    <div class="shadow">
+                        <div class="iphone-device">
+                            <section id="demo">
+                                <div class="white-bkg"></div>
+                                <header>
+                                    <img src="images/logo.png" alt="Rhymance logo" width="100">
+                                </header>
+                                <!-- CARDS -->
+                                <div class="cards">
+                                    <article>
+                                        <img src="images/poems/Me hablaste.png" alt="Álex poem, 23 years old">
+                                        <h2>Álex <span>23</span></h2>
+                                        <div class="choice nope">NOPE</div>
+                                        <div class="choice like">LIKE</div>
+                                    </article>
+
+                                    <article>
+                                        <img src="images/poems/No escribí.png" alt="Limary poem, 27 years old">
+                                        <h2>Limary <span>27</span></h2>
+                                        <div class="choice nope">NOPE</div>
+                                        <div class="choice like">LIKE</div>
+                                    </article>
+                                    <span>
+                                        No hay más poetas cerca de ti...<br>
+                                        Vuelve a intentarlo más tarde
+                                    </span>
+                                </div>
+                                <!-- FIN CARDS -->
+                                <footer>
+                                    <button class="is-undo" aria-label="undo"></button>
+                                    <button class="is-remove is-big" aria-label="remove"></button>
+                                    <button class="is-star" aria-label="star"></button>
+                                    <button class="is-fav is-big" aria-label="fav"></button>
+                                    <button class="is-zap" aria-label="zap"></button>
+                                </footer>
+                            </section>
+                        </div>
                     </div>
                 </div>
                 <!-- FIN DEMO -->
@@ -118,7 +124,7 @@
             <!-- FIN SECCIÓN PRODUCTO -->
 
             <!-- SECCIÓN CARACTERÍSTICAS PRINCIPALES -->
-            <section id="caracteristicas" class="py-5">
+            <section id="features" class="py-5">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
@@ -525,8 +531,5 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
-
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/swipe.js"></script>
 </body>
 </html>
