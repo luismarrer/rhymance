@@ -41,7 +41,6 @@
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleApp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleApp" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleApp" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -58,13 +57,6 @@
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/carrousel.png" class="d-block w-100" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleApp" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,48 +70,71 @@
             </div>
             <!-- SECCIÓN PRODUCTO -->
             <section id="app" class="py-5">
-                <!-- DEMO -->
-                <div class="iphone-container" id="demostration">
-                    <div class="shadow">
-                        <div class="iphone-device">
-                            <section id="demo">
-                                <div class="white-bkg"></div>
-                                <header>
-                                    <img src="images/logo.png" alt="Rhymance logo">
-                                </header>
-                                <!-- CARDS -->
-                                <div class="cards">
-                                    <article>
-                                        <img src="images/poems/Me hablaste.png" alt="Álex poem, 23 years old">
-                                        <h2>Álex <span>23</span></h2>
-                                        <div class="choice nope">NOPE</div>
-                                        <div class="choice like">LIKE</div>
-                                    </article>
-
-                                    <article>
-                                        <img src="images/poems/No escribí.png" alt="Limary poem, 27 years old">
-                                        <h2>Limary <span>27</span></h2>
-                                        <div class="choice nope">NOPE</div>
-                                        <div class="choice like">LIKE</div>
-                                    </article>
-                                    <span>
-                                        No hay más poetas cerca de ti...<br>
-                                        Vuelve a intentarlo más tarde
-                                    </span>
-                                </div>
-                                <!-- FIN CARDS -->
-                                <footer>
-                                    <button class="is-undo" aria-label="undo"></button>
-                                    <button class="is-remove is-big" aria-label="remove"></button>
-                                    <button class="is-star" aria-label="star"></button>
-                                    <button class="is-fav is-big" aria-label="fav"></button>
-                                    <button class="is-zap" aria-label="zap"></button>
-                                </footer>
-                            </section>
+                <div class="row flex-wrap mx-auto align-items-center">
+                    <!-- DEMO -->
+                        <div class="col iphone-container" id="demostration">
+                        <div class="shadow">
+                            <div class="iphone-device">
+                                    <section id="demo">
+                                    <div class="white-bkg"></div>
+                                    <header>
+                                        <img src="images/logo.png" alt="Rhymance logo">
+                                    </header>
+                                    <!-- CARDS -->
+                                        <div class="cards">
+                                        <article>
+                                            <img src="images/poems/Me hablaste.png" alt="Álex poem, 23 years old" class="poem-card-img" data-bs-toggle="modal" data-bs-target="#modalAlex" style="cursor: pointer;" title="Doble clic para ver perfil">
+                                            <h2>Álex <span>23</span></h2>
+                                            <div class="choice nope">NOPE</div>
+                                            <div class="choice like">LIKE</div>
+                                        </article>
+                                        <article>
+                                            <img src="images/poems/No escribí.png" alt="Limary poem, 27 years old" class="poem-card-img" data-bs-toggle="modal" data-bs-target="#modalLimary" style="cursor: pointer;" title="Doble clic para ver perfil">
+                                            <h2>Limary <span>27</span></h2>
+                                            <div class="choice nope">NOPE</div>
+                                            <div class="choice like">LIKE</div>
+                                        </article>
+                                        <span>
+                                            No hay más poetas cerca de ti...<br>
+                                            Vuelve a intentarlo más tarde
+                                        </span>
+                                    </div>
+                                    <!-- FIN CARDS -->
+                                    <footer>
+                                        <button class="is-undo" aria-label="undo"></button>
+                                        <button class="is-remove is-big" aria-label="remove"></button>
+                                        <button class="is-star" aria-label="star"></button>
+                                        <button class="is-fav is-big" aria-label="fav"></button>
+                                        <button class="is-zap" aria-label="zap"></button>
+                                    </footer>
+                                </section>
+                            </div>
                         </div>
                     </div>
+                    <!-- FIN DEMO -->
+                    <!-- Descripción del producto -->
+                    <div class="col container px-5 mx-auto">
+                        <h2 class="display-4 fw-bold mb-4">Rhymance: Donde la poesía encuentra el amor</h2>
+                        <p class="lead mb-4">Revolucionamos las citas online con una propuesta única: en lugar de juzgar por las fotos, conecta con las almas a través de hermosos poemas y versos.</p>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Conexiones auténticas</h5>
+                                        <small class="text-secondary">Basadas en sensibilidad literaria</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary col text-center flex align-content-center" href="contact.html">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FIN descripción del producto -->
                 </div>
-                <!-- FIN DEMO -->
             </section>
             <!-- FIN SECCIÓN PRODUCTO -->
 
@@ -531,5 +546,96 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
+
+    <!-- Modales de Perfil -->
+    <!-- Modal Perfil Álex -->
+    <div class="modal fade" id="modalAlex" tabindex="-1" aria-labelledby="modalAlexLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAlexLabel"><i class="bi bi-person-heart me-2"></i>Perfil de Álex</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img src="images/poems/Me hablaste.png" alt="Poema de Álex" class="img-fluid rounded shadow" style="max-height: 300px;">
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-rhymancedark text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                        </div>
+                        <div>
+                            <h4 class="mb-0">Álex <span class="badge bg-secondary">23 años</span></h4>
+                            <small class="text-light">Madrid, España</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Sobre mí</h6>
+                        <p class="text-light">Poeta nocturno y amante de las metáforas. Creo que las palabras tienen el poder de conectar almas. Busco a alguien que entienda el lenguaje del corazón.</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Intereses</h6>
+                        <span class="badge bg-light text-dark me-1">Poesía romántica</span>
+                        <span class="badge bg-light text-dark me-1">Literatura</span>
+                        <span class="badge bg-light text-dark me-1">Música indie</span>
+                        <span class="badge bg-light text-dark me-1">Café</span>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Estilo poético</h6>
+                        <p class="text-light mb-0">Verso libre, con toques de surrealismo y romanticismo contemporáneo.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Nope</button>
+                    <button type="button" class="btn btn-danger">Me gusta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Perfil Limary -->
+    <div class="modal fade" id="modalLimary" tabindex="-1" aria-labelledby="modalLimaryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-rhymancedark text-white">
+                    <h5 class="modal-title" id="modalLimaryLabel"><i class="bi bi-person-heart me-2"></i>Perfil de Limary</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img src="images/poems/No escribí.png" alt="Poema de Limary" class="img-fluid rounded shadow" style="max-height: 300px;">
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-rhymancedark text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                        </div>
+                        <div>
+                            <h4 class="mb-0">Limary <span class="badge bg-secondary">27 años</span></h4>
+                            <small class="text-light">Barcelona, España</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Sobre mí</h6>
+                        <p class="text-light">Escritora de emociones y coleccionista de atardeceres. Mis versos nacen del silencio y buscan encontrar eco en otro corazón sensible.</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Intereses</h6>
+                        <span class="badge bg-light text-dark me-1">Poesía contemporánea</span>
+                        <span class="badge bg-light text-dark me-1">Arte</span>
+                        <span class="badge bg-light text-dark me-1">Naturaleza</span>
+                        <span class="badge bg-light text-dark me-1">Fotografía</span>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Estilo poético</h6>
+                        <p class="text-light mb-0">Micropoesía y haikus, con influencias de poetas latinoamericanas.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Nope</button>
+                    <button type="button" class="btn btn-danger">Me gusta</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
