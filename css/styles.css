@@ -111,6 +111,18 @@
     }
 }
 
+/* Sombra de texto para carousel caption */
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+    padding: 2rem;
+    border-radius: 0 0 24px 24px;
+}
+
 /* Sección App / Producto */
 #app {
     background-color: #1B1B1B !important;
