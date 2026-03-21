@@ -1,0 +1,68 @@
+---
+const testimonials = [
+  {
+    name: "Elena V.",
+    text: "I never thought I could find someone who understood my metaphors. I found them here!",
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    country: "Spain",
+    time: "6 months",
+    status: "In a happy relationship for 3 months"
+  },
+  {
+    name: "Javier R.",
+    text: "Tired of the superficial, Rhymance was a breath of fresh air. The conversations are incredible.",
+    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    country: "Mexico",
+    time: "1 year",
+    status: "Meeting incredible people"
+  },
+  {
+    name: "Carla G.",
+    text: "It's like my book club where, hopefully, you fall in love. Highly recommended!",
+    img: "https://randomuser.me/api/portraits/women/65.jpg",
+    country: "Argentina",
+    time: "8 months",
+    status: "Dating someone special"
+  },
+  {
+    name: "Miguel S.",
+    text: "Finally a place where being 'intense' is a quality. I feel at home.",
+    img: "https://randomuser.me/api/portraits/men/85.jpg",
+    country: "Colombia",
+    time: "3 months",
+    status: "Exploring connections"
+  }
+];
+---
+<section id="experiences" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-white">Rhyming Stories</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            {testimonials.map((t) => (
+                <div class="col">
+                    <div class="card testimonial-card border-0 shadow-sm h-100 bg-body-secondary">
+                        <div class="card-body text-center p-4 d-flex flex-column">
+                            <div class="testimonial-avatar mx-auto mb-3">
+                                <img src={t.img} alt={t.name} class="rounded-circle border border-success border-3" width="100" height="100">
+                            </div>
+                            <h5 class="card-title fw-bold mb-1">{t.name}</h5>
+                            <p class="card-text text-muted small mb-3">"{t.text}"</p>
+                            <div class="mt-auto">
+                                <button type="button" class="btn btn-outline-danger btn-sm fw-semibold" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-trigger="focus" 
+                                    data-bs-placement="top" 
+                                    data-bs-title={`${t.name} - Details`} 
+                                    data-bs-content={`Country: ${t.country}<br>Time using: ${t.time}<br>Status: ${t.status}`} 
+                                    data-bs-html="true">
+                                    More info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

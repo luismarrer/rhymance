@@ -1,5 +1,5 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 
 // 🎨 Paleta Rhymance
 $passion-text: #E63946;
@@ -33,4 +33,4 @@ $theme: dark !default;
   $body-color: $dark-text;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";

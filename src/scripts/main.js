@@ -1,8 +1,6 @@
 
 
-import '../scss/custom.scss';
-import '../css/styles.css';
-import '../css/swipe.css';
+
 
 import * as bootstrap from 'bootstrap';
 

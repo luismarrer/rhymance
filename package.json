@@ -4,11 +4,14 @@
   "description": "Rhymance web application",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development --open",
-    "build": "webpack --mode production",
-    "watch": "webpack --watch --mode development"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
+    "astro": "^6.0.8",
     "bootstrap": "5.3.8"
   },
   "devDependencies": {
@@ -31,5 +34,5 @@
     "overrides": {
       "serialize-javascript": "7.0.3"
     }
-}
+  }
 }
