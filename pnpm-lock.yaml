@@ -22,7 +22,7 @@ importers:
         specifier: 9.1.3
         version: 9.1.3(@babel/core@7.23.5)(webpack@5.105.4)
       copy-webpack-plugin:
-        specifier: 11.0.0
+        specifier: ^11.0.0
         version: 11.0.0(webpack@5.105.4)
       core-js:
         specifier: 3.34.0
