@@ -1,0 +1,29 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+	pageTitle: string;
+	lastUpdated?: string;
+}
+
+const { title, pageTitle, lastUpdated } = Astro.props;
+---
+
+<BaseLayout title={title}>
+	<Navbar />
+	<main class="max-w-4xl mx-auto px-4" style="padding-top: 100px; padding-bottom: 50px;">
+		<h1 class="text-white text-4xl font-bold mb-4">{pageTitle}</h1>
+		{lastUpdated && (
+			<p class="text-white/50">
+				<small>Última actualización: {lastUpdated}</small>
+			</p>
+		)}
+		<div class="text-white/50">
+			<slot />
+		</div>
+	</main>
+	<Footer />
+</BaseLayout>

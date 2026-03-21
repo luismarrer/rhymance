@@ -1,0 +1,186 @@
+/* Navbar - border handled by Tailwind in component */
+
+/* Contenedor del carousel con márgenes modernos */
+.carousel-container {
+    margin-top: 130px;
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-modern {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    max-height: 500px;
+}
+
+.carousel-modern .carousel-inner {
+    border-radius: 24px;
+    height: 500px;
+}
+
+.carousel-slide {
+    height: 500px;
+}
+
+.carousel-slide img {
+    border-radius: 24px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive para el carousel */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 1rem;
+        margin-top: 125px;
+    }
+    
+    .carousel-modern {
+        border-radius: 16px;
+        max-height: 400px;
+    }
+    
+    .carousel-modern .carousel-inner {
+        border-radius: 16px;
+        height: 400px;
+    }
+    
+    .carousel-slide {
+        height: 400px;
+    }
+    
+    .carousel-slide img {
+        border-radius: 16px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-container {
+        padding: 0 0.5rem;
+    }
+    
+    .carousel-modern {
+        border-radius: 12px;
+        max-height: 300px;
+    }
+    
+    .carousel-modern .carousel-inner {
+        border-radius: 12px;
+        height: 300px;
+    }
+    
+    .carousel-slide {
+        height: 300px;
+    }
+    
+    .carousel-slide img {
+        border-radius: 12px;
+        height: 100%;
+    }
+}
+
+/* Sombra de texto para carousel caption */
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+    padding: 2rem;
+    border-radius: 0 0 24px 24px;
+}
+
+/* Sección App / Producto */
+#app {
+    background-color: #1B1B1B !important;
+    color: white;
+}
+
+#app h2, #app h3, #app h5 {
+    color: white;
+}
+
+#app p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sección de Funcionalidades */
+#features {
+    background-color: #1B1B1B;
+}
+
+#features h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.feature-card {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Sección de Experiencias */
+
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.testimonial-avatar img {
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Store Section */
+.store-item {
+    transition: all 0.3s ease;
+}
+
+.store-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer a {
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #experiences h2 {
+        font-size: 1.75rem;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 1rem;
+    }
+}
