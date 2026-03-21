@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-passion: #E63946;
+  --color-passion-dark: #D62839;
+  --color-lyric: #6A4C93;
+  --color-rhymance-dark: #8B1E2D;
+  --color-rhymance-light: #F1A1A7;
+  --color-bg-light: #F8F9FA;
+  --color-bg-dark: #181112;
+  --color-text-light: #212529;
+  --color-text-dark: #EAEAEA;
+  --color-white-50: rgba(255, 255, 255, 0.5);
+}

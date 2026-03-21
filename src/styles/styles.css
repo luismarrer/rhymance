@@ -1,31 +1,4 @@
-/* Navbar */
-#navbar {
-    border-bottom: 1px solid #38292A;
-}
-
-#navbar .navbar-brand {
-    color: white;
-}
-
-#navbar .nav-link {
-    color: white;
-}
-
-#navbar .nav-link:hover {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#navbar .nav-link-pill {
-    background-color: #E63946;
-    color: white;
-    border-radius: 50px;
-    padding: 0.5rem 1.25rem;
-}
-
-#navbar .nav-link-pill:hover {
-    background-color: #D62839;
-    color: white;
-}
+/* Navbar - border handled by Tailwind in component */
 
 /* Contenedor del carousel con márgenes modernos */
 .carousel-container {
@@ -48,11 +21,11 @@
     height: 500px;
 }
 
-.carousel-modern .carousel-item {
+.carousel-slide {
     height: 500px;
 }
 
-.carousel-modern .carousel-item img {
+.carousel-slide img {
     border-radius: 24px;
     object-fit: cover;
     width: 100%;
@@ -76,11 +49,11 @@
         height: 400px;
     }
     
-    .carousel-modern .carousel-item {
+    .carousel-slide {
         height: 400px;
     }
     
-    .carousel-modern .carousel-item img {
+    .carousel-slide img {
         border-radius: 16px;
         height: 100%;
     }
@@ -101,11 +74,11 @@
         height: 300px;
     }
     
-    .carousel-modern .carousel-item {
+    .carousel-slide {
         height: 300px;
     }
     
-    .carousel-modern .carousel-item img {
+    .carousel-slide img {
         border-radius: 12px;
         height: 100%;
     }
@@ -133,71 +106,8 @@
     color: white;
 }
 
-#app p, #app .lead {
+#app p {
     color: rgba(255, 255, 255, 0.8);
-}
-
-#app .card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: none;
-}
-
-#app .card-body {
-    background-color: transparent;
-}
-
-#app .card-title {
-    color: white;
-}
-
-#app .card-text {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#app .badge {
-    background-color: #E63946 !important;
-}
-
-#app .btn-primary {
-    background: linear-gradient(135deg, #E63946 0%, #D62839 100%);
-    border: none;
-}
-
-#app .btn-primary:hover {
-    background: linear-gradient(135deg, #D62839 0%, #C51726 100%);
-}
-
-#app .btn-outline-primary {
-    color: white;
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-#app .btn-outline-primary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: white;
-}
-
-/* Estilos para las tarjetas de características en la sección App */
-#app .feature-mini-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-#app .feature-mini-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateY(-3px);
-}
-
-#app .feature-mini-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Sección de Funcionalidades */
@@ -209,10 +119,6 @@
     color: #fff;
     font-size: 2.5rem;
     font-weight: 700;
-}
-
-#features .lead {
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .feature-card {
@@ -238,17 +144,6 @@
     background: rgba(255, 255, 255, 0.05);
 }
 
-.feature-card .card-title {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.feature-card .card-text {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.6;
-}
-
 /* Sección de Experiencias */
 
 #experiences h2 {
@@ -270,29 +165,18 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.testimonial-card .card-title {
-    color: #1a1a1a;
-    font-size: 1.1rem;
+/* Store Section */
+.store-item {
+    transition: all 0.3s ease;
 }
 
-.testimonial-card .card-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #666;
+.store-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.testimonial-card .btn-link {
-    font-size: 0.9rem;
-    padding: 0;
-}
-
-.testimonial-card .btn-link:hover {
-    text-decoration: underline !important;
-}
-
-/* Borde verde para avatares */
-.border-success {
-    border-color: #20c997 !important;
+/* Footer */
+footer a {
+    transition: all 0.3s ease;
 }
 
 /* Responsive */
@@ -304,34 +188,4 @@
     .testimonial-card {
         margin-bottom: 1rem;
     }
-}
-
-/* Store Section */
-
-
-#store .list-group-item:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Popover - título visible */
-.popover-header {
-    color: #1a1a1a;
-    background-color: #f8f9fa;
-}
-
-/* Footer */
-footer a {
-    transition: all 0.3s ease;
-}
-
-footer a.text-white-50:hover {
-    color: #fff !important;
-    text-decoration: underline !important;
-}
-
-footer a[aria-label]:hover svg {
-    transform: translateY(-3px);
-    transition: transform 0.3s ease;
 }

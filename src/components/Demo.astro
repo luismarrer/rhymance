@@ -1,9 +1,9 @@
 ---
 ---
-<section id="app" class="py-5">
-    <div class="row flex-wrap mx-auto align-items-center">
+<section id="app" class="py-20">
+    <div class="flex flex-wrap mx-auto items-center">
         <!-- DEMO -->
-        <div class="col iphone-container" id="demostration">
+        <div class="flex-1 iphone-container" id="demostration">
             <div class="shadow">
                 <div class="iphone-device">
                     <section id="demo">
@@ -14,13 +14,13 @@
                         <!-- CARDS -->
                         <div class="cards">
                             <article>
-                                <img src="/images/poems/Me hablaste.png" alt="Álex poem, 23 years old" class="poem-card-img" data-bs-toggle="modal" data-bs-target="#modalAlex" style="cursor: pointer;" title="Double click to view profile">
+                                <img src="/images/poems/Me hablaste.png" alt="Álex poem, 23 years old" class="poem-card-img" data-modal-target="modalAlex" style="cursor: pointer;" title="Double click to view profile">
                                 <h2>Álex <span>23</span></h2>
                                 <div class="choice nope">NOPE</div>
                                 <div class="choice like">LIKE</div>
                             </article>
                             <article>
-                                <img src="/images/poems/No escribí.png" alt="Limary poem, 27 years old" class="poem-card-img" data-bs-toggle="modal" data-bs-target="#modalLimary" style="cursor: pointer;" title="Double click to view profile">
+                                <img src="/images/poems/No escribí.png" alt="Limary poem, 27 years old" class="poem-card-img" data-modal-target="modalLimary" style="cursor: pointer;" title="Double click to view profile">
                                 <h2>Limary <span>27</span></h2>
                                 <div class="choice nope">NOPE</div>
                                 <div class="choice like">LIKE</div>
@@ -44,23 +44,23 @@
         </div>
         <!-- END DEMO -->
         <!-- Product Description -->
-        <div class="col container px-5 mx-auto">
-            <h2 class="display-4 fw-bold mb-4">Rhymance: Where poetry meets love</h2>
-            <p class="lead mb-4">We revolutionize online dating with a unique proposal: instead of judging by photos, connect with souls through beautiful poems and verses.</p>
+        <div class="flex-1 max-w-7xl px-5 mx-auto">
+            <h2 class="text-5xl font-bold mb-4">Rhymance: Where poetry meets love</h2>
+            <p class="text-xl mb-4">We revolutionize online dating with a unique proposal: instead of judging by photos, connect with souls through beautiful poems and verses.</p>
             
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex align-items-center">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+            <div class="flex flex-wrap gap-4">
+                <div class="flex-1">
+                    <div class="flex items-center">
+                        <div class="bg-passion text-white rounded-full p-3 mr-3 flex items-center justify-center">
                             <i class="bi bi-heart-fill"></i>
                         </div>
                         <div>
-                            <h5 class="mb-1">Authentic connections</h5>
-                            <small class="text-secondary">Based on literary sensitivity</small>
+                            <h5 class="mb-1 font-semibold">Authentic connections</h5>
+                            <small class="text-white/60">Based on literary sensitivity</small>
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary col text-center d-flex align-items-center justify-content-center" href="/contact">
+                <a class="flex-1 bg-passion text-white text-center flex items-center justify-center rounded-lg px-6 py-3 no-underline font-semibold hover:bg-passion-dark transition-colors" href="/contact">
                     Contact Us
                 </a>
             </div>
