@@ -146,11 +146,6 @@
 
 /* Sección de Experiencias */
 
-#experiences h2 {
-    font-size: 2rem;
-    color: #1a1a1a;
-}
-
 .testimonial-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
