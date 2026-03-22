@@ -1,227 +1,134 @@
-# 💕 Rhymance - Donde la Poesía Encuentra el Amor
-
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-1.69.5-CC6699?style=flat-square&logo=sass&logoColor=white)
-![Webpack](https://img.shields.io/badge/Webpack-5.94.0-8DD6F9?style=flat-square&logo=webpack&logoColor=black)
-
-🔗 **[Ver Demo en Vivo](https://rhymance.netlify.app/)**
-
-> **Proyecto Final del Curso de Bootstrap de Mastermind.ac**
-
 <p align="center">
-  <img src="images/logo.png" alt="Rhymance Logo" width="150">
+  <img src="logo.png" alt="Rhymance Logo" width="180">
 </p>
 
-## 📖 Descripción
+<h1 align="center">💕 Rhymance</h1>
 
-**Rhymance** es una aplicación de citas revolucionaria que conecta personas a través de la poesía en lugar de fotos. En Rhymance, los usuarios descubren conexiones basadas en la sensibilidad literaria, deslizando versos en lugar de imágenes.
+<p align="center">
+  <strong>Where Poetry Meets Love</strong><br>
+  A dating app that connects people through poetry — swipe verses, not selfies.
+</p>
 
-Este proyecto es una landing page completa que presenta el producto y permite a los usuarios contactar con el fabricante.
+<p align="center">
+  <a href="https://rhymance.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-Visit%20Site-ff6b9d?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"></a>
+</p>
 
-La descripción para cumplir con el reto final del curso de Bootstrap es la siguiente:
-
-```md
-Llegamos al Reto Final y queremos practicar el mayor número de componentes y utilidades de Bootstrap. Para sigue las siguientes instrucciones:
-
-Web de presentación y venta de un producto recién lanzado al mercado
-
-- Página principal de producto
-- Página de contacto con fabricante
-
- ---
-
-  Antes de comenzar  
-
-Define un template de colores **nuevo**  que se usará en el proyecto aplicando la customización con Sass. En este nuevo template de colores crea dos esquemas de colores: uno oscuro y un claro. Hazlo tanto para el color del fondo como para el color del texto.
-
-**Página principal de producto:**
-
-- Menú de navegación fijo en parte superior, con Logo en formato imagen. Enlaces a las partes de la página, incluyendo scrollSpy.
-- Carousel con al menos dos fotos.
-- Tarjeta con foto y descripción del producto. El botón “Contactar” llevará a la misma página que la del menú de navegación. A la foto principal del producto se le añade un Modal que cuando se haga click se abra la imagen del producto en grande.
-- Apartado de especificaciones técnicas con una tabla de al menos 5 filas.
-- Apartado de Experiencia de usuarios usando GRID y tarjetas con al menos una foto y un botón de Mas Info que lanzará un PopOver con los datos del cliente, el país de uso y cuanto tiempo lleva usandolo.
-- Apartado En Tienda donde se usará un List Group, y en cada elemento aparecerá el nombre de la tienda, el país, población y otros datos de contacto.
-- **Footer** final con los datos del fabricante
-
-**Ejemplo de diseño:**
-
-![Ejemplo de diseño](mockup/MockupReferencia.png)
-
-Página contacto de fabricante:
-
-En este caso implementaremos un formulario de contacto pidiendo más información al fabricante. El formulario debe contener la siguiente información:
-
-- Nombre del cliente
-- País
-- Ciudad
-- Correo electrónico
-- Selección del modelo de producto sobre el que se pregunta (en este caso se creará un seleccionable con al menos 4 modelos)
-- Check pidiendo si la persona es particular o empresa
-- Text Área con el texto que se utiliza
-- Botón de solicitud
+<p align="center">
+  <img src="https://img.shields.io/badge/Astro-6.0-bc52ee?style=flat-square&logo=astro&logoColor=white" alt="Astro">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-4.2-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
+</p>
 
 ---
 
-Si quieres desarrollar un proyecto personal, y quieres feedback u orientación sobre el, en el momento de la entrega debes explicarnos todos los componentes utilizados, y el mockup.
-```
+## 📖 About
 
-## ✨ Características del Proyecto
+**Rhymance** reimagines online dating by replacing photos with poetry. Instead of judging profiles by appearance, users discover deeper connections through literary sensitivity and shared emotions — swiping on verses instead of selfies.
 
-### 🎨 Personalización con Sass
+This repository contains the **complete landing page** for the application, designed to introduce the product, showcase its core experience, and drive user engagement.
 
-- **Paleta de colores personalizada** definida con variables Sass
-- **Tema oscuro y claro** implementados mediante esquemas de color
-- Colores principales:
-  - `$rhymancedark: #8B1E2D` - Rojo vino elegante
-  - `$rhymancelight: #F1A1A7` - Rosa suave
-  - `$passion-text: #E63946` - Rojo pasión
-  - `$liryc-text: #6A4C93` - Púrpura lírico
+## ✨ Features
 
-### 📄 Páginas Incluidas
+### 🎯 Interactive Demo
+The landing page includes a fully functional, **Tinder-style poetry demo** built with Vanilla JavaScript:
 
-| Página | Descripción |
-| -------- | ------------- |
-| `index.html` | Página principal del producto |
-| `contact.html` | Formulario de contacto con el fabricante |
-| `privacy.html` | Política de privacidad |
-| `terms.html` | Términos y condiciones |
-| `cookies.html` | Política de cookies |
+- 📱 Realistic iPhone interface mockup
+- 📜 Swipeable poetry cards with smooth animations
+- 💖 Interactive action buttons (Like, Nope, Super Like)
+- 🎨 Fluid CSS transitions and micro-animations
 
----
+### 🏗️ Landing Page Sections
 
-## 🧩 Componentes Bootstrap Utilizados
+| Section | Description |
+|---------|-------------|
+| **Hero** | Full-screen carousel with automatic slideshow |
+| **Demo** | Interactive swipeable poetry card experience |
+| **Features** | Highlights of the app's core capabilities |
+| **Testimonials** | User quotes and social proof |
+| **Store** | App Store & Google Play download links |
+| **Contact** | Get in touch form |
 
-### Página Principal (`index.html`)
+### 📄 Additional Pages
+- Cookie Policy
+- Privacy Policy
+- Terms of Service
 
-| Componente | Uso en el Proyecto |
-| ------------ | ------------------- |
-| **Navbar** | Menú de navegación fijo en la parte superior con logo en formato imagen |
-| **ScrollSpy** | Navegación que resalta la sección activa al hacer scroll |
-| **Carousel** | Slider con 2 imágenes promocionales y textos descriptivos |
-| **Cards** | Tarjetas para la demo interactiva del producto y testimonios |
-| **Modal** | Ventanas emergentes para ver perfiles de usuarios (Álex y Limary) |
-| **Table** | Tabla de especificaciones técnicas con 6 características |
-| **Grid System** | Layout responsive para la sección de experiencias |
-| **Popover** | Información adicional en los botones "Más info" de testimonios |
-| **List Group** | Enlaces de descarga (App Store, Google Play, Web App) |
-| **Badges** | Etiquetas de estado (Premium, Incluido, Beta) |
-| **Footer** | Pie de página con información del fabricante y enlaces |
+## 🛠️ Tech Stack
 
-### Página de Contacto (`contact.html`)
+| Technology | Purpose |
+|-----------|---------|
+| [Astro](https://astro.build/) | Static site framework with component islands |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling |
+| Vanilla JavaScript | Interactive demo and carousel logic |
+| [Vercel](https://vercel.com/) | Deployment and hosting |
 
-| Componente | Uso en el Proyecto |
-| ----------- | ------------------- |
-| **Form Controls** | Inputs para nombre, país, ciudad y email |
-| **Select** | Selección del modelo de producto (4 opciones) |
-| **Radio Buttons** | Tipo de cliente (Particular/Empresa) |
-| **Textarea** | Campo de texto para el mensaje |
-| **Button** | Botón de envío del formulario |
-| **Form Validation** | Validación de campos requeridos |
+## 🚀 Getting Started
 
----
+### Prerequisites
 
-## 🎯 Demo Interactiva
+- [Node.js](https://nodejs.org/) (v18+)
+- [pnpm](https://pnpm.io/)
 
-El proyecto incluye una **demo interactiva estilo Tinder** que simula la experiencia de la app hecho con Bootstrap y JavaScript puro:
-
-- Interfaz de iPhone con diseño realista
-- Tarjetas de poemas deslizables
-- Botones de acción (Like, Nope, etc.)
-- Animaciones suaves con CSS
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Bootstrap 5.3.8** - Framework CSS
-- **Sass** - Preprocesador CSS para customización
-- **Webpack 5.94** - Bundler y servidor de desarrollo
-- **Babel** - Transpilador JavaScript
-- **Bootstrap Icons** - Iconografía
-
----
-
-## 📦 Instalación
+### Installation
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/luismarrer/rhymance.git
-
-# Entrar al directorio
 cd rhymance
 
-# Instalar dependencias
-npm install
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
 ```
 
-## 🚀 Scripts Disponibles
+The site will be available at `http://localhost:4321`.
 
-```bash
-# Servidor de desarrollo con hot reload
-npm run dev
+### Available Scripts
 
-# Compilar para producción
-npm run build
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start the development server |
+| `pnpm build` | Build for production |
+| `pnpm preview` | Preview the production build locally |
 
-# Modo watch para desarrollo
-npm run watch
+## 📁 Project Structure
+
 ```
-
-## 📁 Estructura del Proyecto
-
-```plaintext
 rhymance/
-├── index.html          # Página principal
-├── contact.html        # Página de contacto
-├── privacy.html        # Política de privacidad
-├── terms.html          # Términos y condiciones
-├── cookies.html        # Política de cookies
-├── package.json        # Dependencias del proyecto
-├── webpack.config.js   # Configuración de Webpack
-├── css/
-│   ├── styles.css      # Estilos principales
-│   ├── swipe.css       # Estilos de la demo interactiva
-│   └── custom.min.css  # CSS compilado
-├── scss/
-│   └── custom.scss     # Personalización Bootstrap con Sass
-├── js/
-│   ├── main.js         # JavaScript principal
-│   └── swipe.js        # Funcionalidad de swipe
-├── images/
-│   ├── logo.png        # Logo de Rhymance
-│   ├── poems/          # Imágenes de poemas
-│   ├── icons/          # Iconos
-│   └── favicon_io/     # Favicons
-└── mockup/             # Recursos de diseño
+├── src/
+│   ├── components/      # Astro UI components
+│   │   ├── Hero.astro         # Hero carousel
+│   │   ├── Demo.astro         # Interactive poetry swiper
+│   │   ├── Features.astro     # Feature highlights
+│   │   ├── Testimonials.astro # User testimonials
+│   │   ├── Store.astro        # App store links
+│   │   ├── Navbar.astro       # Navigation bar
+│   │   ├── Footer.astro       # Site footer
+│   │   └── Modals.astro       # Modal dialogs
+│   ├── layouts/         # Page layout templates
+│   │   ├── BaseLayout.astro   # Main site layout
+│   │   └── LegalLayout.astro  # Legal pages layout
+│   ├── pages/           # Route pages
+│   ├── scripts/         # Client-side JavaScript
+│   └── styles/          # Global styles
+├── public/              # Static assets (images, icons, poems)
+├── astro.config.mjs     # Astro configuration
+└── package.json
 ```
 
-## 🎨 Personalización de Temas
+## 👨‍💻 Author
 
-El proyecto implementa **dos esquemas de color** mediante Sass:
+Crafted with passion by **Luis Marrero** :)
 
-```scss
-// Tema Claro
-$light-background: #F8F9FA;
-$light-text: #212529;
+<p align="center">
+  <a href="https://luismarrer.github.io/en/"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/luismarrer/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://x.com/luismarrer_dev"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"></a>
+</p>
 
-// Tema Oscuro (por defecto)
-$dark-background: #181112;
-$dark-text: #EAEAEA;
-```
+---
 
-Para cambiar entre temas, modificar la variable `$theme` en `scss/custom.scss`:
-
-```scss
-$theme: dark !default;  // Cambiar a 'light' para tema claro
-```
-
-## 👨‍💻 Autor
-
-Yo, **Luis Marrero** :)
-
-- 🌐 [Portfolio](https://luismarrer.github.io/en/)
-- 💼 [LinkedIn](https://www.linkedin.com/in/luismarrer/)
-- 🐦 [Twitter/X](https://x.com/luismarrer_dev)
-
-Este proyecto fue creado como **proyecto final del curso de Bootstrap**.
+<p align="center">If you liked this project, feel free to leave a star! ⭐️</p>
