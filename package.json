@@ -2,6 +2,7 @@
   "name": "rhymance-monorepo",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.5.2",
   "scripts": {
     "dev": "pnpm --parallel run dev",
     "dev:marketing": "pnpm --filter marketing dev",
