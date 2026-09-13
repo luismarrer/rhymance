@@ -1,0 +1,16 @@
+{
+  "name": "@rhymance/domain",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "dependencies": {
+    "@rhymance/config": "workspace:*",
+    "@rhymance/shared": "workspace:*"
+  }
+}

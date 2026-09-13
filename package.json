@@ -1,19 +1,17 @@
 {
-  "name": "rhymance",
+  "name": "rhymance-monorepo",
   "version": "1.0.0",
-  "description": "Rhymance web application",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "6.1.4"
+    "dev": "pnpm --parallel run dev",
+    "dev:marketing": "pnpm --filter marketing dev",
+    "dev:app": "pnpm --filter app start",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "tailwindcss": "^4.2.2"
+    "typescript": "^5.3.3"
   }
 }
