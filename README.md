@@ -10,125 +10,100 @@
 </p>
 
 <p align="center">
-  <a href="https://rhymance.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-Visit%20Site-ff6b9d?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"></a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Astro-6.0-bc52ee?style=flat-square&logo=astro&logoColor=white" alt="Astro">
   <img src="https://img.shields.io/badge/Tailwind%20CSS-4.2-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/React%20Native-Expo-0081CB?style=flat-square&logo=react&logoColor=white" alt="React Native">
+  <img src="https://img.shields.io/badge/Firebase-BaaS-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase">
 </p>
 
 ---
 
-## 📖 About
+## 📖 About & Product Vision
 
 **Rhymance** reimagines online dating by replacing photos with poetry. Instead of judging profiles by appearance, users discover deeper connections through literary sensitivity and shared emotions — swiping on verses instead of selfies.
 
-This repository contains the **complete landing page** for the application, designed to introduce the product, showcase its core experience, and drive user engagement.
+This repository is transitioning into a **pnpm workspaces monorepo** consisting of:
+- **`apps/marketing`**: The Astro-based landing page introducing the product, showcasing its core experience, and driving recruiter engagement.
+- **`apps/app`**: The Expo / React Native product application running on Web, iOS, and Android.
+- **`packages/`**: Shared configurations, domain layers, UI design systems, and Firebase integrations.
 
-## ✨ Features
+> [!NOTE]
+> This application is currently in **Prototype / Active Development** (Alpha). Features described on the marketing page reflect the target cross-platform MVP and are being rolled out systematically in phases.
 
-### 🎯 Interactive Demo
-The landing page includes a fully functional, **Tinder-style poetry demo** built with Vanilla JavaScript:
+---
 
-- 📱 Realistic iPhone interface mockup
-- 📜 Swipeable poetry cards with smooth animations
-- 💖 Interactive action buttons (Like, Nope, Super Like)
-- 🎨 Fluid CSS transitions and micro-animations
+## 📚 Project Documentation
 
-### 🏗️ Landing Page Sections
+Detailed architecture, database designs, and development guides are located in the `docs/` folder:
 
-| Section | Description |
-|---------|-------------|
-| **Hero** | Full-screen carousel with automatic slideshow |
-| **Demo** | Interactive swipeable poetry card experience |
-| **Features** | Highlights of the app's core capabilities |
-| **Testimonials** | User quotes and social proof |
-| **Store** | App Store & Google Play download links |
-| **Contact** | Get in touch form |
+### Development & DevOps
+* 🛠️ [Local Setup Guide](file:///Users/luis/Dev/rhymance/docs/local-setup-guide.md) — How to configure dependencies, start workspaces, and run the Firebase emulator.
+* 🚀 [Deployment Guide](file:///Users/luis/Dev/rhymance/docs/deployment-guide.md) — Steps for deploying the Astro website and publishing Firebase configuration scripts.
+* 🧪 [Testing Guide](file:///Users/luis/Dev/rhymance/docs/testing-guide.md) — Unit, integration, and rules testing workflows.
 
-### 📄 Additional Pages
-- Cookie Policy
-- Privacy Policy
-- Terms of Service
+### Architecture & Design
+* 🏗️ [Architecture Overview](file:///Users/luis/Dev/rhymance/docs/architecture-overview.md) — Topologies, monorepo structures, and clean coding contracts.
+* 🗄️ [Data Model Documentation](file:///Users/luis/Dev/rhymance/docs/data-model-documentation.md) — Firestore collection specifications, documents, and relationships.
+* 🔐 [Security Model](file:///Users/luis/Dev/rhymance/docs/security-model.md) — Auth requirements, database/storage security rules, and block integrations.
+* 💡 [ADR-001: Select Firebase](file:///Users/luis/Dev/rhymance/docs/decisions/ADR-001-select-firebase-as-primary-backend.md) — Architectural decision record explaining the choice of Firebase over Supabase.
+
+### Store Submission & Compliance
+* 🍏 [App Store Preparation Checklist](file:///Users/luis/Dev/rhymance/docs/app-store-preparation-checklist.md) — Asset lists and Apple metadata requirements.
+* 🤖 [Google Play Preparation Checklist](file:///Users/luis/Dev/rhymance/docs/google-play-preparation-checklist.md) — Package mappings, adaptive icons, and Data Safety requirements.
+* ⚖️ [Privacy & Moderation Documentation](file:///Users/luis/Dev/rhymance/docs/privacy-and-moderation-documentation.md) — User moderation, community rules, blocking systems, and account deletion rules.
+
+---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|-----------|---------|
-| [Astro](https://astro.build/) | Static site framework with component islands |
-| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling |
-| Vanilla JavaScript | Interactive demo and carousel logic |
-| [Vercel](https://vercel.com/) | Deployment and hosting |
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Marketing Site** | [Astro](https://astro.build/) | Static site rendering & component architecture |
+| **Mobile & Web App** | [Expo](https://expo.dev/) + React Native | Cross-platform runtime for iOS, Android, and Web |
+| **App Routing** | Expo Router | Native file-based navigation |
+| **Styling** | Tailwind CSS / NativeWind | Modern visual utility framework |
+| **Backend Suite** | Firebase | Serverless database, authentication, push messaging, cloud storage, and functions |
+| **Monorepo Manager** | `pnpm` workspaces | Fast dependency management and module isolation |
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 🚀 Quick Start (Development)
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [pnpm](https://pnpm.io/)
-
-### Installation
+To boot up the local dev environment (Astro landing page, Expo web runtime, and Firebase Local Emulator Suite) running concurrently:
 
 ```bash
-# Clone the repository
-git clone https://github.com/luismarrer/rhymance.git
-cd rhymance
-
-# Install dependencies
+# Install root dependencies
 pnpm install
 
-# Start the development server
-pnpm dev
+# Start local services concurrently
+pnpm run dev
 ```
 
-The site will be available at `http://localhost:4321`.
+For more detailed setup options, consult the [Local Setup Guide](file:///Users/luis/Dev/rhymance/docs/local-setup-guide.md).
 
-### Available Scripts
+---
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start the development server |
-| `pnpm build` | Build for production |
-| `pnpm preview` | Preview the production build locally |
+## 📁 Repository Target Layout
 
-## 📁 Project Structure
-
-```
+```text
 rhymance/
-├── src/
-│   ├── components/      # Astro UI components
-│   │   ├── Hero.astro         # Hero carousel
-│   │   ├── Demo.astro         # Interactive poetry swiper
-│   │   ├── Features.astro     # Feature highlights
-│   │   ├── Testimonials.astro # User testimonials
-│   │   ├── Store.astro        # App store links
-│   │   ├── Navbar.astro       # Navigation bar
-│   │   ├── Footer.astro       # Site footer
-│   │   └── Modals.astro       # Modal dialogs
-│   ├── layouts/         # Page layout templates
-│   │   ├── BaseLayout.astro   # Main site layout
-│   │   └── LegalLayout.astro  # Legal pages layout
-│   ├── pages/           # Route pages
-│   ├── scripts/         # Client-side JavaScript
-│   └── styles/          # Global styles
-├── public/              # Static assets (images, icons, poems)
-├── astro.config.mjs     # Astro configuration
-└── package.json
+├── apps/
+│   ├── marketing/           # Astro + Tailwind CSS landing website
+│   └── app/                 # Expo + React Native application (iOS, Android, Web)
+├── packages/
+│   ├── domain/              # Business rules, domain models, and interfaces
+│   ├── shared/              # Standard utility types and functions
+│   ├── ui/                  # Reusable cross-platform design tokens and buttons
+│   ├── firebase/            # Shared Firebase client repositories
+│   └── config/              # Shared compiler/lint configurations
+├── firebase/                # Firestore rules, JSON config, functions logic
+├── docs/                    # Architectural decisions and guides
+├── pnpm-workspace.yaml      # Monorepo workspaces definition
+└── package.json             # Root workspace coordinator
 ```
+
+---
 
 ## 👨‍💻 Author
 
 Crafted with passion by **Luis Marrero** :)
-
-<p align="center">
-  <a href="https://luismarrer.github.io/en/"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/luismarrer/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/luismarrer_dev"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"></a>
-</p>
-
----
-
-<p align="center">If you liked this project, feel free to leave a star! ⭐️</p>

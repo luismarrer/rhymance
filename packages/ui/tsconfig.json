@@ -1,0 +1,12 @@
+{
+  "extends": "@rhymance/config/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "jsx": "react-native",
+    "paths": {
+      "react": ["../../node_modules/.pnpm/@types+react@19.2.17/node_modules/@types/react"]
+    }
+  },
+  "include": ["src/**/*"]
+}
