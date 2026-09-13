@@ -40,6 +40,9 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build Workspace Packages
+        run: pnpm --filter "@rhymance/*" run build
+
       - name: Run Linting
         run: pnpm run lint
 
