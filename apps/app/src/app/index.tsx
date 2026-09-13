@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { View, StyleSheet, Text, Pressable, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -36,7 +36,7 @@ export default function DiscoveryScreen() {
     poemTitle: '',
   });
 
-  const loadQueue = async () => {
+  const loadQueue = useCallback(async () => {
     setIsLoading(true);
     try {
       const userId = currentUser?.id || 'user_recruiter';
@@ -49,11 +49,34 @@ export default function DiscoveryScreen() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [currentUser, poemRepository]);
 
   useEffect(() => {
-    loadQueue();
-  }, [poemRepository, currentUser]);
+    let isMounted = true;
+    const fetchInitialQueue = async () => {
+      try {
+        const userId = currentUser?.id || 'user_recruiter';
+        const queue = await poemRepository.getDiscoveryQueue(userId);
+        if (isMounted) {
+          setCards(queue);
+          setCurrentIndex(0);
+          setHistory([]);
+        }
+      } catch (err) {
+        if (isMounted) {
+          console.error('Error loading discovery queue:', err);
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      }
+    };
+    fetchInitialQueue();
+    return () => {
+      isMounted = false;
+    };
+  }, [currentUser, poemRepository]);
 
   const currentCard = cards[currentIndex];
 

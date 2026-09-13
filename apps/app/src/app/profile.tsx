@@ -46,8 +46,29 @@ export default function ProfileScreen() {
   };
 
   useEffect(() => {
-    loadProfile();
-  }, [profileRepository, currentUser]);
+    if (!currentUser) return;
+    let isMounted = true;
+    const fetchProfileData = async () => {
+      try {
+        const p = await profileRepository.getProfile(currentUser.id);
+        const matches = await matchRepository.getMatches(currentUser.id);
+        const convs = await conversationRepository.getConversations(currentUser.id);
+        if (isMounted) {
+          setProfile(p);
+          setMatchCount(matches.length);
+          setConvCount(convs.length);
+        }
+      } catch (err) {
+        if (isMounted) {
+          console.error('Error loading profile:', err);
+        }
+      }
+    };
+    fetchProfileData();
+    return () => {
+      isMounted = false;
+    };
+  }, [profileRepository, matchRepository, conversationRepository, currentUser]);
 
   const handleReset = () => {
     const doReset = () => {
@@ -133,7 +154,7 @@ export default function ProfileScreen() {
             </View>
           </View>
 
-          <Text style={styles.poemTitle}>"Versos para el alba"</Text>
+          <Text style={styles.poemTitle}>&ldquo;Versos para el alba&rdquo;</Text>
           <View style={styles.poemBox}>
             <Text style={styles.poemVerses}>
               En la frontera exacta de tu mirada,{'\n'}

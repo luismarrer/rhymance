@@ -26,25 +26,33 @@ export default function MatchesScreen() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const loadData = async () => {
-    if (!currentUser) return;
-    setIsLoading(true);
-    try {
-      const [fetchedMatches, fetchedConversations] = await Promise.all([
-        matchRepository.getMatches(currentUser.id),
-        conversationRepository.getConversations(currentUser.id),
-      ]);
-      setMatches(fetchedMatches);
-      setConversations(fetchedConversations);
-    } catch (err) {
-      console.error('Error loading matches/conversations:', err);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   useEffect(() => {
-    loadData();
+    if (!currentUser) return;
+    let isMounted = true;
+    const fetchMatchesAndConversations = async () => {
+      try {
+        const [fetchedMatches, fetchedConversations] = await Promise.all([
+          matchRepository.getMatches(currentUser.id),
+          conversationRepository.getConversations(currentUser.id),
+        ]);
+        if (isMounted) {
+          setMatches(fetchedMatches);
+          setConversations(fetchedConversations);
+        }
+      } catch (err) {
+        if (isMounted) {
+          console.error('Error loading matches/conversations:', err);
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      }
+    };
+    fetchMatchesAndConversations();
+    return () => {
+      isMounted = false;
+    };
   }, [matchRepository, conversationRepository, currentUser]);
 
   // Helper to resolve poet info from user ID
